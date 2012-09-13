@@ -1,4 +1,4 @@
-= Readme
+= README
 
 ditto takes a Windows exe as input and copies the resources
 
@@ -9,7 +9,8 @@ icons, copywright info and descriptions of the binary.
 == Example usage:
 
 Usage output:
-<pre>
+
+{{{
 C:\>ditto.exe
 
 ditto - binary resource mirrorer
@@ -19,17 +20,17 @@ C:\>ditto.exe sourcebin.exe targetbin.exe
 
 
 C:\>
-</pre>
+}}}
 
 Copy (no output):
-<pre>
+{{{
 C:\>ditto.exe C:\windows\system32\notepad.exe evilbin.exe
 
 C:\>
-</pre>
+}}}
 
 ** Disclaimer: does not work with Metasploit In-memory: **
-<pre>
+{{{
 meterpreter > upload evilbin.exe
 [*] uploading  : evilbin.exe -> evilbin.exe
 [*] uploaded   : evilbin.exe -> evilbin.exe
@@ -37,8 +38,8 @@ meterpreter > execute -H -i -c -d calc.exe -m -f ditto.exe -a 'C:\windows\system
 Process 1840 created.
 Channel 2 created.
 meterpreter >
-</pre>
+}}}
 But does not result in a file change of any kind and sometimes results in meterpreter dieing.
 
-== changelog
+== CHANGELOG
 2012-09-13 - code commit for version 1.0
