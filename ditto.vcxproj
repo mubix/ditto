@@ -79,6 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="banned.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ditto.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sheep.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
