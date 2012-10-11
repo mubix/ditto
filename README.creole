@@ -4,7 +4,9 @@ ditto takes a Windows exe as input and copies the resources
 
 of that binary into the target binary. Resources are usually
 
-icons, copywright info and descriptions of the binary. 
+icons, copywright info and descriptions of the binary.
+
+Info & Compiled version: http://www.room362.com/blog/2012/10/8/compiling-and-release-of-ditto.html
 
 == Example usage:
 
