@@ -28,7 +28,7 @@ int wmain(int argc, wchar_t * argv[])
 	hExe = LoadLibraryEx(argv[1], NULL, LOAD_LIBRARY_AS_DATAFILE);
 	if (hExe == NULL)
 	{
-		printf("Error code: %d\n", hExe);
+		printf("Error code: %d\n", GetLastError());
 	    return 1;
 	}
 
