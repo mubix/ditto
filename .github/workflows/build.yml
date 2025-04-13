@@ -1,0 +1,40 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # This line grants write permission for repository contents
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up MinGW
+        uses: egor-tensin/setup-mingw@v2
+        with:
+          platform: x64
+
+      - name: Make build script executable
+        run: chmod +x build.sh
+
+      - name: Build application
+        run: ./build.sh
+
+      - name: Tag commit
+        run: |
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          files: ditto.exe
+
+
