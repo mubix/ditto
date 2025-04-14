@@ -48,5 +48,5 @@ meterpreter >
 But does not result in a file change of any kind and sometimes results in meterpreter dieing.
 
 ## CHANGELOG
-2025-04-13 - huge facelift and focus on only relevant resources
-2012-09-13 - code commit for version 1.0
+- 2025-04-13 - huge facelift and focus on only relevant resources
+- 2012-09-13 - code commit for version 1.0
