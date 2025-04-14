@@ -8,7 +8,9 @@ of that binary into the target binary. Resources are usually
 
 icons, copywright info and descriptions of the binary.
 
-Info & Compiled version: http://www.room362.com/blog/2012/10/8/compiling-and-release-of-ditto.html
+Info: https://room362.com/posts/2012/2012-10-08-compiling-and-release-of-ditto/
+
+Compiled version: https://github.com/mubix/ditto/releases/tag/latest
 
 ## Example usage:
 
